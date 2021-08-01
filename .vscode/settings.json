@@ -6,5 +6,6 @@
   },
   "eslint.validate": ["javascript"],
   "eslint.lintTask.enable": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "css.lint.unknownAtRules": "ignore"
 }
