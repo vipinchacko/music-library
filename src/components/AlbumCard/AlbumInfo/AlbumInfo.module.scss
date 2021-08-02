@@ -1,0 +1,28 @@
+@import '../../../utils/styles/fontSize';
+@import '../../../utils/styles/colors';
+
+.albumInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 10px 0 0 15px;
+}
+
+.album,
+.artist {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: $blackShade2;
+}
+
+.album {
+  font-weight: bold;
+  font-size: $md;
+}
+
+.artist {
+  font-size: $sm2;
+  margin-top: 2px;
+}
