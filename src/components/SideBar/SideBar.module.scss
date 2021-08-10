@@ -1,0 +1,45 @@
+@import '../../utils/styles/breakPointMixins';
+@import '../../utils/styles/colors';
+
+.sideBar {
+  height: 100%;
+  width: calc(100% - 20px);
+}
+
+.searchBar {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.searchBarLabel,
+.dateSelectorLabel,
+.categorySelectorLabel {
+  color: $blackShade2;
+  margin-bottom: 5px;
+}
+
+.dateFilter {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.fromDateSelector {
+  display: flex;
+  width: 100%;
+}
+
+.toDateSelector {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.categorySelector {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
