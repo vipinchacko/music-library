@@ -1,20 +1,41 @@
 @import '../../../utils/styles/fontSize';
 @import '../../../utils/styles/colors';
 
+.albumInfoParent {
+  display: flex;
+  padding: 7px;
+  width: calc(100% - 14px);
+}
+
 .albumInfo {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 10px 0 0 15px;
+  width: calc(100% - 22px);
+  color: $blackShade2;
+}
+
+.favouriteButton {
+  width: 22px;
+  height: 22px;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.favouriteIcon {
+  width: 22px;
+  height: 22px;
 }
 
 .album,
 .artist {
-  width: 100%;
+  width: calc(100% - 20px);
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: $blackShade2;
 }
 
 .album {
@@ -22,7 +43,24 @@
   font-size: $md;
 }
 
-.artist {
+.details {
+  visibility: hidden;
+  flex-direction: column;
+  transition: height 0.3s ease-in;
+  height: 0;
+  overflow: hidden;
+}
+
+.detailsExpand {
+  display: flex;
+  visibility: visible;
+  height: 70px;
+}
+
+.artist,
+.price,
+.genre,
+.songCount {
   font-size: $sm2;
   margin-top: 2px;
 }
