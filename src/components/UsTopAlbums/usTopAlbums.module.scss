@@ -1,0 +1,163 @@
+@import '../../utils/styles/breakPointMixins';
+@import '../../utils/styles/colors';
+@import '../../utils/styles/fontSize';
+
+.content {
+  display: flex;
+  background-color: $greyShade4;
+  padding: 0 10px 0 10px;
+  @include largeAndAbove {
+    padding: 0;
+  }
+}
+
+.sideBar {
+  display: flex;
+  height: 100vh;
+  width: 250px;
+  box-shadow: -20px 30px 45px 4px #b5b5b5;
+  padding-top: 25px;
+  margin-right: 40px;
+  justify-content: center;
+}
+
+.sideBar.sideBarOpen {
+  display: flex;
+  width: 100%;
+  border-radius: 5px;
+  margin-right: 0;
+  @include largeAndAbove {
+    width: 250px;
+    border-radius: 0;
+    margin-right: 40px;
+  }
+}
+
+.sideBar.sideBarClosed {
+  display: none;
+  @include largeAndAbove {
+    display: flex;
+  }
+}
+
+.filterButton {
+  position: fixed;
+  right: 5px;
+  top: 5px;
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  @include largeAndAbove {
+    right: 10px;
+    top: 10px;
+  }
+}
+
+.filterButton.hideFilterButton {
+  display: none;
+}
+
+.filterButton.showFilterButton {
+  display: flex;
+  @include largeAndAbove {
+    display: none;
+  }
+}
+
+.filterIcon {
+  background-color: #df9999;
+  width: 40px;
+  border-radius: 7px;
+}
+
+.topAlbumsHeader {
+  text-align: center;
+  margin: 10px 0 10px 0;
+  color: $blackShade2;
+  font-size: $lg1;
+
+  @include largeAndAbove {
+    font-size: $xlg;
+    text-align: left;
+    padding-left: 15px;
+  }
+}
+
+.topAlbumsParent {
+  display: flex;
+  flex-direction: column;
+}
+
+.topAlbumsParent.showAlbums {
+  display: flex;
+}
+
+.topAlbumsParent.hideAlbums {
+  display: none;
+  @include largeAndAbove {
+    display: flex;
+  }
+}
+
+.topAlbums {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  height: 100vh;
+  overflow-y: auto;
+  width: calc(140px * 2 + 40px);
+  justify-content: center;
+  padding: 12px 15px 0 15px;
+  @include mediumAndAbove {
+    width: calc(170px * 4 + 10px * 3);
+  }
+  @include largeAndAbove {
+    justify-content: flex-start;
+    column-gap: 40px;
+    width: calc(170px * 3 + 40px * 2);
+  }
+  @include extraLargeAndAbove {
+    width: calc(170px * 4 + 40px * 4);
+  }
+}
+
+.topAlbums {
+  & > div:nth-child(n + 3) {
+    padding-top: 10px;
+    @include mediumAndAbove {
+      padding-top: 0;
+    }
+  }
+  & > div:nth-child(n + 5) {
+    @include mediumAndAbove {
+      padding-top: 40px;
+    }
+    @include largeAndAbove {
+      padding-top: 0;
+    }
+  }
+  & > div:nth-child(n + 4) {
+    @include largeAndAbove {
+      padding-top: 40px;
+    }
+    @include extraLargeAndAbove {
+      padding-top: 0;
+    }
+  }
+  & > div:nth-child(n + 5) {
+    @include extraLargeAndAbove {
+      padding-top: 40px;
+    }
+  }
+}
+
+.albumCard {
+  width: 140px;
+  @include mediumAndAbove {
+    width: 170px;
+  }
+}
