@@ -114,7 +114,7 @@
   padding: 12px 5px 0 5px;
   justify-content: center;
   @include mediumAndAbove {
-    padding: 12px 15px 0 15px;
+    padding: 10px 15px 0 15px;
     width: calc(170px * 4 + 10px * 3);
   }
   @include largeAndAbove {
