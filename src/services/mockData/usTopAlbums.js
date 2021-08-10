@@ -89,9 +89,9 @@ let usTopAlbums200Response = {
             },
           },
           'im:releaseDate': {
-            label: '2021-07-30T00:00:00-07:00',
+            label: '2021-07-11T00:00:00-07:00',
             attributes: {
-              label: 'July 30, 2021',
+              label: 'July 11, 2021',
             },
           },
         },
@@ -123,7 +123,7 @@ let usTopAlbums200Response = {
             },
           ],
           'im:itemCount': {
-            label: '12',
+            label: '13',
           },
           'im:price': {
             label: '$7.99',
@@ -179,9 +179,9 @@ let usTopAlbums200Response = {
             },
           },
           'im:releaseDate': {
-            label: '2021-07-30T00:00:00-07:00',
+            label: '2021-07-19T00:00:00-07:00',
             attributes: {
-              label: 'July 30, 2021',
+              label: 'July 19, 2021',
             },
           },
         },
@@ -216,7 +216,7 @@ let usTopAlbums200Response = {
             label: '10',
           },
           'im:price': {
-            label: '$9.99',
+            label: '$11.99',
             attributes: {
               amount: '9.99',
               currency: 'USD',
@@ -274,6 +274,67 @@ let usTopAlbums200Response = {
             attributes: {
               label: 'July 30, 2021',
             },
+          },
+        },
+        {
+          'im:name': { label: 'Greatest Hits' },
+          'im:image': [
+            {
+              label:
+                'https://is3-ssl.mzstatic.com/image/thumb/Music115/v4/d2/48/f4/d248f4ae-a7e4-a48e-1588-6617de3e8d76/mzi.izeorbmm.jpg/55x55bb.png',
+              attributes: { height: '55' },
+            },
+            {
+              label:
+                'https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/d2/48/f4/d248f4ae-a7e4-a48e-1588-6617de3e8d76/mzi.izeorbmm.jpg/60x60bb.png',
+              attributes: { height: '60' },
+            },
+            {
+              label:
+                'https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/d2/48/f4/d248f4ae-a7e4-a48e-1588-6617de3e8d76/mzi.izeorbmm.jpg/170x170bb.png',
+              attributes: { height: '170' },
+            },
+          ],
+          'im:itemCount': { label: '16' },
+          'im:price': {
+            label: '$12.99',
+            attributes: { amount: '11.99', currency: 'USD' },
+          },
+          'im:contentType': {
+            'im:contentType': { attributes: { term: 'Album', label: 'Album' } },
+            attributes: { term: 'Music', label: 'Music' },
+          },
+          rights: { label: '℗ 1988 Warner Records Inc.' },
+          title: { label: 'Greatest Hits - Fleetwood Mac' },
+          link: {
+            attributes: {
+              rel: 'alternate',
+              type: 'text/html',
+              href: 'https://music.apple.com/us/album/greatest-hits/202271826?uo=2',
+            },
+          },
+          id: {
+            label:
+              'https://music.apple.com/us/album/greatest-hits/202271826?uo=2',
+            attributes: { 'im:id': '202271826' },
+          },
+          'im:artist': {
+            label: 'Fleetwood Mac',
+            attributes: {
+              href: 'https://music.apple.com/us/artist/fleetwood-mac/158038?uo=2',
+            },
+          },
+          category: {
+            attributes: {
+              'im:id': '21',
+              term: 'Rock',
+              scheme: 'https://music.apple.com/us/genre/music-rock/id21?uo=2',
+              label: 'Rock',
+            },
+          },
+          'im:releaseDate': {
+            label: '1988-11-22T00:00:00-07:00',
+            attributes: { label: 'November 22, 1988' },
           },
         },
       ],
