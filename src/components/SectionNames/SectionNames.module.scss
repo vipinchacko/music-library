@@ -1,0 +1,25 @@
+@import '../../utils/styles/breakPointMixins';
+@import '../../utils/styles/colors';
+
+.sectionNames {
+  display: flex;
+  padding-left: 15px;
+  justify-content: center;
+  @include largeAndAbove {
+    justify-content: flex-start;
+  }
+}
+
+.sectionNameLabel {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.sectionNameInput {
+  display: none;
+  margin-right: 20px;
+}
+
+.sectionNameLabel.selected {
+  color: $pinkShade1;
+}
