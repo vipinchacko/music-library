@@ -4,6 +4,7 @@
 
 .content {
   display: flex;
+  height: 100%;
   background-color: $greyShade4;
   padding: 0 10px 0 10px;
   @include largeAndAbove {
