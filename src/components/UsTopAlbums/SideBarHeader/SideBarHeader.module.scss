@@ -1,0 +1,9 @@
+@import '../../../utils/styles/breakPointMixins';
+
+.sideBarHeader {
+  width: 100%;
+  padding: 0 0 0 auto;
+  @include largeAndAbove {
+    display: none;
+  }
+}
