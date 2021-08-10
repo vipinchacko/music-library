@@ -1,5 +1,6 @@
 @import '../../utils/styles/breakPointMixins';
 @import '../../utils/styles/colors';
+@import '../../utils/styles/fontSize';
 
 .sideBar {
   height: 100%;
@@ -26,14 +27,26 @@
   align-items: flex-start;
 }
 
+.startDateLabel {
+  color: $blackShade2;
+  font-size: $sm2;
+}
+
+.endDateLabel {
+  color: $blackShade2;
+  margin-top: 10px;
+  font-size: $sm2;
+}
+
 .fromDateSelector {
   display: flex;
+  margin-top: 2px;
   width: 100%;
 }
 
 .toDateSelector {
   display: flex;
-  margin-top: 10px;
+  margin-top: 2px;
   width: 100%;
 }
 

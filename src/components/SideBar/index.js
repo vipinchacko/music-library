@@ -27,6 +27,7 @@ const SideBar = ({
       </div>
       <div className={styles.dateFilter}>
         <span className={styles.dateSelectorLabel}>Release date between</span>
+        <span className={styles.startDateLabel}>Start date</span>
         <div className={styles.fromDateSelector}>
           <DateSelector
             onDateChange={onDateChange}
@@ -34,6 +35,7 @@ const SideBar = ({
             selectedDate={selectedDates.fromDate}
           />
         </div>
+        <span className={styles.endDateLabel}>End date</span>
         <div className={styles.toDateSelector}>
           <DateSelector
             onDateChange={onDateChange}
